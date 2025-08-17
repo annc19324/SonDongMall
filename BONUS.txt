@@ -1,0 +1,19 @@
+cd frontend
+npx create-react-app .
+npm install axios react-router-dom socket.io-client
+
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+REACT_APP_API_URL=http://localhost:5000
+
+npm start
+
+
+Tạo JWT_SECRET bằng cách chạy:
+javascriptnode -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
+
+
+frontend
+npm install axios
+npm install react-router-dom
