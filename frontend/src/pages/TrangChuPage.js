@@ -33,10 +33,10 @@ export default function TrangChuPage() {
             <h2>Trang Chủ - Sơn Đồng Mall</h2>
             <h3>Thông tin tài khoản</h3>
             <div>
-                <img 
-                    src={avatarUrl} 
-                    alt="Ảnh đại diện" 
-                    style={{ width: '100px', height: '100px', borderRadius: '50%' }} 
+                <img
+                    src={avatarUrl}
+                    alt="Ảnh đại diện"
+                    style={{ width: '100px', height: '100px', borderRadius: '50%' }}
                     onError={(e) => { e.target.src = '/fallback-avatar.png'; e.target.onerror = null; }} // Fallback local và dừng retry
                 />
                 <p><strong>Tên người dùng:</strong> {user.tenNguoiDung}</p>
